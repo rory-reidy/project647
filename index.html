@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Artism</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+  
+<body>
+    <div id="add_to_me">
+        <h1>Artism</h1>
+        <p id="add_after_me">
+          a place to obsess about art</p>
+    </div>
+  
+    <button onclick="addCode()">Add Stuff</button>
+    <script>
+        function addCode() {
+            document.getElementById("add_after_me").insertAdjacentHTML("afterend",
+                "<h3>This is the text which has been inserted by JS</h3>");
+        }
+    </script>
+</body>
+  
+</html>
